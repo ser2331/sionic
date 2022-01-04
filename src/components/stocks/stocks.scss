@@ -1,0 +1,63 @@
+.Stocks {
+  padding-left: 16px;
+  border-left: 1px solid #F0F4FB;
+
+  &__free-stock {
+    display: flex;
+    text-align: right;
+    padding: 20px;
+    border: 1px solid #FF2D87;
+    border-radius: 20px;
+
+    .stock-frame {
+      width: 45%;
+      svg {
+        position: absolute;
+        margin: 0px -109px;
+        width: 91px;
+        height: 82px;
+      }
+    }
+
+    .stock-content {
+      .label {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: left;
+        line-height: 130%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #2967FF;
+      }
+
+      .learn-more {
+        padding: 10px 25px;
+        color: #F0F4FB;
+        background: #2967FF;
+        border-radius: 51px;
+        border: 1px solid #F0F4FB;
+      }
+
+    }
+
+  }
+
+  &__new-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 158px;
+    margin-top: 32px;
+    text-align: center;
+    border-radius: 20px;
+    background: url("../../assets/images/backStocks.png") no-repeat center center;
+    background-size: contain;
+
+    .name-stock {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+}

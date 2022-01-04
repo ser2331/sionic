@@ -1,0 +1,67 @@
+.Footer {
+  padding: 35px 50px;
+  background-color: #F8F8F8;
+
+  &__up-zone {
+    display: flex;
+
+    .logo {
+      flex: 1 0;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 40.8px;
+      line-height: 50px;
+      color: #2D2D2F;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-around;
+      flex: 1 0;
+      .social-label {
+        font-family: Raleway;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2D2D2F;
+      }
+
+      .socials-page {
+        .social-logo {
+          display: flex;
+          margin-top: 10px;
+
+          svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 16px;
+          }
+        }
+      }
+
+      .socials-app {
+        .app-logo-wrapper {
+          display: flex;
+          margin-top: 10px;
+          .app-logo {
+            width: 104px;
+            height: 32px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__foot-zone {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .docs {
+      font-size: 14px;
+      line-height: 122%;
+      color: #8D8D8E;
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  &__content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 50px;
+    .work-zone {
+      flex: 1 0;
+      padding-right: 50px;
+    }
+    .stocks-zone {
+    }
+  }
+
+}
