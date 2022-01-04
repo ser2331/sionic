@@ -11,6 +11,10 @@
 
   &__change-city {
     display: flex;
+
+    .city-name {
+      border: none;
+    }
   }
 
   &__search-panel {
