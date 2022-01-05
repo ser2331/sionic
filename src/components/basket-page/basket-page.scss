@@ -1,0 +1,217 @@
+.BasketPage {
+  padding: 30px 0;
+
+  &__header {
+    display: flex;
+
+    .name-page {
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: #2D2D2F;
+    }
+
+    .RowButton {
+      margin-left: 30px;
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__orders {
+    margin-top: 30px;
+    border: 1px solid #AEC2EA;
+    border-radius: 20px;
+
+    .order-cap {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid #AEC2EA;
+      border-radius: 20px;
+
+      .order-name {
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        color: #2D2D2F;
+      }
+
+      .total-price-wrapper {
+        .price-label {
+          font-family: Raleway;
+          font-size: 16px;
+          line-height: 140%;
+          color: #2D2D2F;
+        }
+
+        .total-price {
+          font-family: Raleway;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          color: #2D2D2F;
+        }
+      }
+
+      .logo-wrapper {
+        display: flex;
+
+        .svg1 {
+          //position: absolute;
+          margin-left: -65px;
+
+          svg {
+            width: 86px;
+            height: 90px;
+          }
+        }
+
+        .svg2 {
+          position: absolute;
+          margin-left: -10px;
+
+          svg {
+            width: 57px;
+            height: 57px;
+          }
+
+        }
+
+        .svg3 {
+          position: absolute;
+          margin-left: 32px;
+
+          svg {
+            width: 61px;
+            height: 54px;
+          }
+        }
+      }
+
+      .arrange-btn {
+        width: 214px;
+        height: 50px;
+        background: #2967FF;
+        border-radius: 51px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    .orders-carts-wrapper {
+      padding: 40px 58px 0;
+    }
+
+    .Order-cart {
+      &__basket-product-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        //padding: 40px 58px 0;
+
+        .image {
+          svg {
+            width: 57px;
+            height: 57px;
+          }
+        }
+
+        .name-wrapper {
+
+          .product-name {
+            font-family: Raleway;
+            font-size: 16px;
+            line-height: 140%;
+            color: #2D2D2F;
+          }
+
+          .properties {
+            display: flex;
+            margin-top: 10px;
+            font-family: Raleway;
+            align-items: center;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 122%;
+
+            .in-stock {
+              position: relative;
+              z-index: 10;
+              padding: 1px 12px;
+              color: #2967FF;
+              border: 1px solid #2967FF;
+              border-radius: 0 100px 100px 40px;
+            }
+
+            .date-stock {
+              z-index: 1;
+              padding: 1px 12px;
+              margin: 0 10px 0 -12px;
+              color: #FF2D87;
+              border: 1px solid #FF2D87;
+              border-left: none;
+              border-radius: 0 100px 100px 0;
+            }
+
+            .bought {
+              font-weight: 400;
+
+              .bought-meaning {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .quantity-of-goods {
+          display: flex;
+          align-items: center;
+          border: 1px solid #AEC2EA;
+          border-radius: 35px;
+          padding: 11px 18px;
+
+          .quantity {
+            margin: 0 32px;
+          }
+        }
+
+        .price {
+          .new-price {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            color: #2D2D2F;
+          }
+
+          .old-price {
+            font-family: Raleway;
+            font-size: 14px;
+            line-height: 122%;
+            color: #8D8D8E;
+            text-decoration: line-through;
+          }
+        }
+
+        .delete-icon {
+
+        }
+      }
+
+      &__order-line {
+        margin: 20px 0;
+        border: 1px solid #AEC2EA;
+      }
+    }
+  }
+}

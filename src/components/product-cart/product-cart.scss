@@ -5,10 +5,7 @@
   &__wrapper {
     //width: 214px;
     overflow: hidden;
-    .image {
-      max-width: 115%;
-      margin-left: -10px;
-    }
+
     .name {
       max-width: 214px;
       overflow: hidden;
@@ -23,6 +20,7 @@
 
     .price {
       width: max-content;
+
       .new-price {
         font-family: Raleway;
         font-weight: 600;
@@ -34,12 +32,13 @@
       .stock-price {
         display: flex;
         justify-content: space-between;
+
         .old-price {
           font-family: Raleway;
           font-size: 14px;
           line-height: 122%;
           color: #8D8D8E;
-          text-decoration: line-through ;
+          text-decoration: line-through;
         }
 
         .discount {
@@ -51,6 +50,7 @@
         }
       }
     }
+
     .add-product-btn {
       width: 100%;
       padding: 10px 40px;
