@@ -3,7 +3,6 @@
   flex-flow: row wrap;
 
   &__wrapper {
-    //width: 214px;
     overflow: hidden;
 
     .name {
@@ -22,10 +21,7 @@
       width: max-content;
 
       .new-price {
-        font-family: Raleway;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 130%;
+        font: 600 20px/24px 'Raleway', sans-serif;
         color: #2967FF;
       }
 
@@ -34,18 +30,13 @@
         justify-content: space-between;
 
         .old-price {
-          font-family: Raleway;
-          font-size: 14px;
-          line-height: 122%;
+          font: 600 14px/24px 'Raleway', sans-serif;
           color: #8D8D8E;
           text-decoration: line-through;
         }
 
         .discount {
-          font-family: Raleway;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 140%;
+          font: 600 14px/140% 'Raleway', sans-serif;
           color: #FF2D87;
         }
       }

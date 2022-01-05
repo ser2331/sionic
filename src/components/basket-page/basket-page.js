@@ -17,7 +17,7 @@ const BasketPage = () => {
                 <div className="order-name">xiaomi</div>
 
                 <div className="total-price-wrapper">
-                    <div className="price-label">Стомость карзины:</div>
+                    <div className="price-label">Стомость корзины:</div>
                     <div className="total-price">12312312312</div>
                 </div>
 

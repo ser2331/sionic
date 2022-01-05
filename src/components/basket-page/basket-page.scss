@@ -5,19 +5,13 @@
     display: flex;
 
     .name-page {
-      font-family: Raleway;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 23px;
+      font: 700 20px/24px 'Raleway', sans-serif;
       color: #2D2D2F;
     }
 
     .RowButton {
       margin-left: 30px;
-      font-family: Raleway;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 19px;
+      font: 600 16px/24px 'Raleway', sans-serif;
     }
   }
 
@@ -34,26 +28,18 @@
       border-radius: 20px;
 
       .order-name {
-        font-family: Raleway;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 130%;
+        font: 600 20px/24px 'Raleway', sans-serif;
         color: #2D2D2F;
       }
 
       .total-price-wrapper {
         .price-label {
-          font-family: Raleway;
-          font-size: 16px;
-          line-height: 140%;
+          font: 400 16px/24px 'Raleway', sans-serif;
           color: #2D2D2F;
         }
 
         .total-price {
-          font-family: Raleway;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 23px;
+          font: 700 20px/24px 'Raleway', sans-serif;
           color: #2D2D2F;
         }
       }
@@ -62,7 +48,6 @@
         display: flex;
 
         .svg1 {
-          //position: absolute;
           margin-left: -65px;
 
           svg {
@@ -100,10 +85,7 @@
         border-radius: 51px;
         border: none;
         color: #FFFFFF;
-        font-family: Raleway;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
+        font: 600 16px/24px 'Raleway', sans-serif;
       }
     }
 
@@ -128,20 +110,15 @@
         .name-wrapper {
 
           .product-name {
-            font-family: Raleway;
-            font-size: 16px;
-            line-height: 140%;
+            font: 400 16px/24px 'Raleway', sans-serif;
             color: #2D2D2F;
           }
 
           .properties {
             display: flex;
             margin-top: 10px;
-            font-family: Raleway;
+            font: 600 12px/24px 'Raleway', sans-serif;
             align-items: center;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 122%;
 
             .in-stock {
               position: relative;
@@ -186,18 +163,12 @@
 
         .price {
           .new-price {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 140%;
+            font: 600 16px/24px 'Raleway', sans-serif;
             color: #2D2D2F;
           }
 
           .old-price {
-            font-family: Raleway;
-            font-size: 14px;
-            line-height: 122%;
+            font: 400 14px/24px 'Raleway', sans-serif;
             color: #8D8D8E;
             text-decoration: line-through;
           }
