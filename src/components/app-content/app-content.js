@@ -9,7 +9,7 @@ const AppContent = () => {
     return (
         <div className="AppContent">
             <Switch>
-                <Route path='/catalog' component={CatalogPage} />
+                <Route path='/' component={CatalogPage} exact/>
                 <Route path='/basket' component={BasketPage} />
             </Switch>
         </div>

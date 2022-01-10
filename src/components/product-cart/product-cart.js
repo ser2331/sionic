@@ -1,5 +1,7 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
 import {Col, Row} from 'antd';
+import {app as appActions} from "../../store/actions"
 import FakeData from '../../fake-data';
 
 import './product-cart.scss';
@@ -7,6 +9,7 @@ import './product-cart.scss';
 const {productPropertiesList} = FakeData
 
 const ProductCart = () => {
+    const dispatch = useDispatch();
     // const getSpan = () => {
     //     switch (appSize) {
     //         case 'mobile':
@@ -25,6 +28,10 @@ const ProductCart = () => {
     //             return 8;
     //     }
     // };
+
+    const addProductOnBasket = (list) => {
+        dispatch(appActions.setProduct(list))
+    };
 
     const renderProduct = (list) => {
         const {id, image, productName, oldPrice, newPrice, searchAttributes} = list;
@@ -54,7 +61,7 @@ const ProductCart = () => {
                     </div>
                 </div>
 
-                <button className="add-product-btn">
+                <button className="add-product-btn" onClick={() => addProductOnBasket(list)}>
                     Добавить в карзину
                 </button>
             </Col>

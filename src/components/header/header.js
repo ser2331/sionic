@@ -1,19 +1,31 @@
 import React from "react";
+import {useHistory} from "react-router-dom";
+import FakeData from "../../fake-data";
+import Types from "../../classes/types";
 import {ReactSVG} from "react-svg";
 import map_icon from "../../assets/images/Pin.svg";
 import search from "../../assets/images/Frame 1349.svg";
 import basket from "../../assets/images/basket.svg";
 import ava from "../../assets/images/ava.svg";
-import FakeData from "../../fake-data";
 
 import './header.scss';
 
 const {citiesList} = FakeData;
+const {routingMap} = Types;
 
 const Header = () => {
+    const history = useHistory();
+
+    const backToHome = () => {
+        history.push(routingMap.get('home').path);
+    };
+    const goToBasket = () => {
+        history.push(routingMap.get('basket').path);
+    };
+
     return (
         <div className="Header">
-            <div className="Header__logo">
+            <div className="Header__logo" onClick={backToHome}>
                 React
             </div>
 
@@ -37,7 +49,7 @@ const Header = () => {
                 </button>
             </div>
 
-            <div className="Header__basket-logo">
+            <div className="Header__basket-logo" onClick={goToBasket}>
                 <ReactSVG className="basket-icon" src={basket} />
             </div>
 
