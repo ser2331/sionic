@@ -79,14 +79,14 @@ export default class FakeData {
         },
     ];
 
-    static catalogList = [
-        {id: 0, name: 'Игрушка', color: '#2967FF'},
-        {id: 1, name: 'Мартышка', color: '#58CF18'},
-        {id: 2, name: 'Мишка', color: '#FFA601'},
-        {id: 3, name: 'Подарок', color: '#FF7CB4'},
-        {id: 4, name: 'Подарок колегам', color: '#FFA601'},
-        {id: 5, name: 'День Рождения Гриши', color: '#FFF'},
-    ];
+    // static catalogList = [
+    //     {id: 0, name: 'Игрушка', color: '#2967FF'},
+    //     {id: 1, name: 'Мартышка', color: '#58CF18'},
+    //     {id: 2, name: 'Мишка', color: '#FFA601'},
+    //     {id: 3, name: 'Подарок', color: '#FF7CB4'},
+    //     {id: 4, name: 'Подарок колегам', color: '#FFA601'},
+    //     {id: 5, name: 'День Рождения Гриши', color: '#FFF'},
+    // ];
 
     static socialsList = [
         {id: 0, img: inst,},

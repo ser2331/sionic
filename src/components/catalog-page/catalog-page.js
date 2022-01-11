@@ -1,22 +1,23 @@
 import React from "react";
+import {useSelector} from "react-redux";
 import ProductCart from "../product-cart";
-import FakeData from '../../fake-data';
 
 import './catalog-page.scss';
 
-const {catalogList} = FakeData
-
 const CatalogPage = () => {
+    const categoryList = useSelector(state => state.app.categories);
 
     const renderSearchCategory = (list) => {
-        const {id, name, color} = list;
+        const {id, name} = list;
+        const col = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
+
         return (
             <button className="category"
                     key={id}
                     style={{
-                        background: color,
-                        color: color === '#FFF' ? '#000' : '#FFF',
-                        border: color === '#FFF' ? '1px solid #FF7CB4' : color,
+                        background: col,
+                        color: col === '#FFF' ? '#000' : '#FFF',
+                        border: col === '#FFF' ? '1px solid #FF7CB4' : 'none',
                     }}
             >
                 {name}
@@ -31,7 +32,7 @@ const CatalogPage = () => {
             </div>
 
             <div className="CatalogPage__category-search">
-                {catalogList.map(renderSearchCategory)}
+                {categoryList.map(renderSearchCategory)}
             </div>
 
             <ProductCart/>

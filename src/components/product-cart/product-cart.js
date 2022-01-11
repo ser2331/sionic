@@ -1,14 +1,16 @@
 import React from 'react';
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Col, Row} from 'antd';
 import {app as appActions} from "../../store/actions"
-import FakeData from '../../fake-data';
 
 import './product-cart.scss';
 
-const {productPropertiesList} = FakeData
-
 const ProductCart = () => {
+    const productsList = useSelector(state => state.app.products);
+    const imagesList = useSelector(state => state.app.images);
+    console.log(productsList);
+    console.log(imagesList);
+
     const dispatch = useDispatch();
     // const getSpan = () => {
     //     switch (appSize) {
@@ -30,30 +32,32 @@ const ProductCart = () => {
     // };
 
     const addProductOnBasket = (list) => {
-        dispatch(appActions.setProduct(list))
+        dispatch(appActions.setProduct(list));
     };
 
     const renderProduct = (list) => {
-        const {id, image, productName, oldPrice, newPrice, searchAttributes} = list;
+        const {id, description, category_id, name, newPrice, oldPrice} = list;
+        const imagesArr = imagesList.filter((item) => item.product_id === id);
+        const imagesLink = imagesArr.length ? imagesArr[0].image_url : '/img/products/601a73165650d.jpg';
         return (
             <Col span={6} className="ProductCart__wrapper" key={id}>
 
                 <div className="image">
-                    <img src={image} alt={productName}/>
+                    <img src={`https://test2.sionic.ru${imagesLink}`} alt={'#'}/>
                 </div>
 
                 <div className="name">
-                    {productName}
+                    {name}
                 </div>
 
                 <div className="price">
                     <div className="new-price">
-                        {`от ${newPrice.toLocaleString()} ₽`}
+                        {`от ${newPrice ? newPrice.toLocaleString() : ''} ₽`}
                     </div>
 
                     <div className="stock-price">
                         <div className="old-price">
-                            {`${oldPrice.toLocaleString()} ₽`}
+                            {`${oldPrice ? oldPrice.toLocaleString() : ''} ₽`}
                         </div>
                         <div className="discount">
                             -10%
@@ -70,7 +74,7 @@ const ProductCart = () => {
 
     return (
         <Row gutter={[20, 24]} className="ProductCart">
-            {productPropertiesList.map(renderProduct)}
+            {productsList.map(renderProduct)}
         </Row>
     );
 };

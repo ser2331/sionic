@@ -5,6 +5,10 @@
   &__wrapper {
     overflow: hidden;
 
+    .image {
+      max-width: 214px;
+    }
+
     .name {
       max-width: 214px;
       overflow: hidden;
